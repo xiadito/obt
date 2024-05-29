@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <title>Experimentos</title>
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>        
         body {
-            background: url('https://www.freepik.com/free-vector/stars-nebula-background_13408780.htm') no-repeat center center fixed;
-            background-size: cover;
             color: white;
         }
         .card {
@@ -23,35 +21,33 @@
         .search-bar {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
         .pagination-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Experimentos</a>
+    <nav class="navbar navbar-dark bg-dark justify-content-md-center">
+        <a class="navbar-brand" href="#"></a>
+        <div class="search-bar">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            </form>
+        </div>
     </nav>
-    <div class="search-bar">
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
-    </div>
+    
     <div class="container mt-4">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             {% for experimento in experimentos %}
             <div class="col-md-4 mb-4 d-flex">
-                <a href="{% url 'obt_pr:detalhe_experimento' experimento.id %}" class="card {{ experimento.status }} flex-fill text-decoration-none">
-                    <div class="card-body text-center text-white">
-                        <h5 class="card-title">{{ experimento.nome }}</h5>
+                <div class="card {{ experimento.status }} flex-fill">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"> {{ experimento.nome }}</h5>
                         <span class="badge status {{ experimento.status }}">{{ experimento.get_status_display }}</span>
                     </div>
-                </a>
+                </div>
             </div>
             {% endfor %}
         </div>
