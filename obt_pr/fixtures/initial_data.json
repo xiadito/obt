@@ -1,0 +1,10 @@
+[
+    {"model": "obt_pr.experimento", "pk": 1, "fields": {"nome": "Densidade óssea e muscular em microgravidade", "status": "intacto"}},
+    {"model": "obt_pr.experimento", "pk": 2, "fields": {"nome": "Materiais resistentes à radiação espacial", "status": "avariado"}},
+    {"model": "obt_pr.experimento", "pk": 3, "fields": {"nome": "Comportamento de fluidos em microgravidade", "status": "avariado"}},
+    {"model": "obt_pr.experimento", "pk": 4, "fields": {"nome": "Microorganismos em ambiente extremo", "status": "intacto"}},
+    {"model": "obt_pr.experimento", "pk": 5, "fields": {"nome": "Crescimento de plantas em microgravidade", "status": "intacto"}},
+    {"model": "obt_pr.experimento", "pk": 6, "fields": {"nome": "Regeneração de tecidos em microgravidade", "status": "avariado"}},
+    {"model": "obt_pr.experimento", "pk": 7, "fields": {"nome": "Comunicação por rádio no espaço", "status": "intacto"}},
+    {"model": "obt_pr.experimento", "pk": 8, "fields": {"nome": "Cristalização de proteínas em microgravidade", "status": "avariado"}}
+]
